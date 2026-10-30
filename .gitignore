@@ -23,8 +23,7 @@ frontend/*.local
 
 # Backend (Maven / Spring Boot)
 backend/target/
-backend/.mvn/wrapper/maven-wrapper.jar
-backend/HELP.md
+backend/uploads/
 
 # Logs
 *.log

@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+/*
+ * Identidad visual de Distribuidora Belocar.
+ * Colores extraidos del isotipo real de la marca (ambar/naranja + carbon oscuro).
+ * Tipografia: Archivo (titulos, bold/black) + Inter (texto).
+ */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Archivo", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Ambar/naranja de marca */
+  --color-brand-50: #fef6ec;
+  --color-brand-100: #fce8ce;
+  --color-brand-200: #f8cc98;
+  --color-brand-300: #f3ad64;
+  --color-brand-400: #ee9645;
+  --color-brand-500: #e07f2e;
+  --color-brand-600: #c36423;
+  --color-brand-700: #9c4e1d;
+  --color-brand-800: #7a3d18;
+  --color-brand-900: #5c2e13;
+
+  /* Carbon oscuro (fondo del isotipo) */
+  --color-ink-50: #f4f5f6;
+  --color-ink-100: #e4e6e9;
+  --color-ink-200: #c7cbd1;
+  --color-ink-300: #9ca3ad;
+  --color-ink-400: #6b7280;
+  --color-ink-500: #4b505b;
+  --color-ink-600: #383d46;
+  --color-ink-700: #2c3038;
+  --color-ink-800: #21242a;
+  --color-ink-900: #16181c;
+
+  /* Neutro calido para fondos claros */
+  --color-sand-50: #fbf9f5;
+  --color-sand-100: #f3ede1;
+  --color-sand-200: #e8dcc7;
+  --color-sand-300: #d8c4a2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-sand-50 text-ink-900 antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
